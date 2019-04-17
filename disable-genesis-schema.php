@@ -83,10 +83,6 @@ function be_disable_genesis_schema() {
  *
  */
 function be_remove_schema_attributes( $attr ) {
-	$remove = apply_filters( 'be_remove_schema_attributes', array( 'itemprop', 'itemtype', 'itemscope' ) );
-	foreach( $remove as $item ) {
-		if( !empty( $attr[ $item ] ) )
-			unset( $attr[ $item ] );
-	}
+	unset( $attr['itemprop'], $attr['itemtype'], $attr['itemscope'] );
 	return $attr;
 }

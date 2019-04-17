@@ -17,10 +17,7 @@ For more information, see [Using Yoast SEO Structured Data with Genesis](https:/
 
 **Customization**
 
-These filters allow you to modify the plugin's functionality:
-
-* `be_remove_schema_elements` - change which elements on the page have their schema data removed. You can use this to leave schema on certain elements (ex: `author-box`)
-* `be_remove_schema_attributes` - change which microdata attributes are removed from each elements. By default we remove 'itemprop', 'itemtype', and 'itemscope'.
+You can use the `be_remove_schema_elements` filter to change which elements on the page have their schema data removed. 
 
 == Installation ==
 
